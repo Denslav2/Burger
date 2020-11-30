@@ -1,0 +1,797 @@
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/Montserrat-Regular.eot');
+    src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Regular.woff') format('woff'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../fonts/Montserrat-ExtraBold.eot');
+    src: url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-ExtraBold.woff') format('woff'),
+    url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }    
+@font-face {
+    font-family: 'Bebas Neue Regular';
+    src: url('../fonts/BebasNeueRegular.eot');
+    src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeueRegular.woff') format('woff'),
+    url('../fonts/BebasNeueRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Bebas Neue Bold';
+    src: url('../fonts/BebasNeueBold.eot');
+    src: url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeueBold.woff') format('woff'),
+    url('../fonts/BebasNeueBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Alfa Slab One';
+    src: local('Alfa Slab One'), local('AlfaSlabOne-Regular'), url('../fonts/alfaslabone.woff2') format('woff2'), url('../fonts/alfaslabone.woff') format('woff'), 
+    url('../fonts/alfaslabone.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}    
+body{
+    overflow-x: hidden;
+}
+/*HEADER*/
+.header{
+    max-width: 1440px;
+    width: 100%;
+    /*height: 825px;*/
+    background-color: #ffc045;
+    background: url("../img/rectangle_5401.png") no-repeat;
+}
+.container-logo{
+    max-width: 1300px;
+    width: 100%;
+    height: 60px;
+    margin: 0px auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    max-width: 263px;
+    width: 100%;
+    height: 58px;
+    background: url("../img/place_your_logo_here_\(double_click_to_edit\)_5400.png") no-repeat;
+}
+.phone{
+    font-family: 'Bebas Neue Bold';
+    font-size: 16.7px;
+    line-height: 70px;
+    font-weight: 700;
+    color: #3d2514;
+}
+/*nav*/
+.navbar{
+    display: none;
+} 
+.main-nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.main-nav-link{
+    font-family: 'Bebas Neue Bold';
+    font-size: 20.9px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #3d2514;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 7px;
+}
+.main-nav-link:last-child{
+    margin-right: 50px;
+}
+.main-nav-link:hover{
+    border: 0px dashed #3d2514;
+    border-radius: 20px;
+    background-color: rgba(0, 255, 255, 0.116);
+
+}
+/*intro*/
+.intro{
+    background-color: #f38766;
+}
+.intro__text{
+    font-family: 'Bebas Neue';
+    font-size: 23.7px;
+    line-height: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #3d2514;
+    border: 2px dashed #3d2514;
+    margin: 190px 0 20px 60px;
+    padding-left: 5px;
+}
+.intro__title{
+    font-family: 'Alfa Slab One';
+    font-size: 114.3px;
+    line-height: 61px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #3d2514;
+    margin: 40px 0px 20px 60px;
+    text-shadow: 4px 5px 0px #CE5937;
+}
+.intro__subtitle{
+    font-family: 'Alfa Slab One';
+    font-size: 56.5px;
+    line-height: 61px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #3d2514;
+    margin: 30px 0px 20px 60px;
+    text-shadow: 4px 5px 0px #CE5937;
+}
+.intro__img{
+    /*width: 100%;*/
+}
+.intro__price{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    background: url('../img/ellips.png') no-repeat;
+    width: 174px;
+    height: 174px;
+    margin-top: 400px;
+    margin-left: 40px;
+}
+.price__item{
+    text-align: center;
+}
+.price__item-5{
+    font-family: 'Bebas Neue Bold';
+    font-size: 69.9px;
+    line-height: 37px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.price__item-49{
+    font-family: 'Bebas Neue Bold';
+    font-size: 30.4px;
+    color: #ffffff;
+}
+.price__item-only{
+    font-family: 'Bebas Neue Bold';
+    font-size: 33.4px;
+    letter-spacing: 0.34em;
+    color: #ffffff;
+}
+/*MAIN*/
+.main-main{
+    max-width: 1400px;
+    width: 100%;
+    background-color: #ffffff;  
+}
+/*popular burger*/
+.popular-burger__title{
+    font-family: 'Alfa Slab One';
+    font-size: 56.5px;
+    line-height: 61px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #3d2514;
+    margin: 30px 0px 20px 0px;
+    text-shadow: 4px 5px 0px #f38766;
+    text-align: center;
+}
+.popular{
+    /*margin: 80px 30px 0 100px;*/
+}
+.popular__title{
+    position: absolute;
+    margin: 35px 65px;
+    font-family: 'Bebas Neue Bold';
+    font-size: 42px;
+    line-height: 37px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.popular__title-item{
+    font-family: 'Bebas Neue Bold';
+    font-size: 25px;
+    line-height: 37px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.popular__title-2{
+    position: absolute;
+    margin: 10px 80px;
+    font-family: 'Bebas Neue Bold';
+    font-size: 42px;
+    line-height: 37px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.popular__title-3{
+    position: absolute;
+    margin: 40px 80px;
+    font-family: 'Bebas Neue Bold';
+    font-size: 42px;
+    line-height: 37px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.more-fun{
+    /*margin: 80px 80px 0 30px;*/
+}
+.fresh-chili{
+    /*margin: 35px 20px 0 30px;*/
+}
+/*tasty-burger*/
+.tasty-burger{
+text-align: center;
+}
+.tasty-burger__title{
+    font-family: 'Bebas Neue Bold';
+    font-size: 25px;
+    line-height: 37px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #3d2514;
+    margin-top: 70px;
+}
+.tasty-burger__title-item{
+    background-color: #ffc045;
+    padding: 10px;
+}
+.tasty-burger__subtitle{
+    font-family: 'Alfa Slab One';
+    font-size: 50px;
+    line-height: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #3d2514;
+    margin-top: 50px;
+}
+.tasty-burger__text{
+    font-family: 'Montserrat';
+    font-size: 16.7px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #3d2514;
+    margin-top: 30px;
+    padding: 0 30px;
+}
+.tasty-burger__img-1{
+    margin: 90px 0 0 40px;
+}
+.tasty-burger__img-2{
+    margin: 90px 0 30px 60px;
+}
+.tasty-burger__img-3{
+    margin: 90px 0 0 40px;
+}
+.tasty-burger__img-title{
+    font-family: 'Bebas Neue Bold';
+    font-size: 37.5px;
+    line-height: 37px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #3d2514;
+    text-align: center;
+    margin: 50px 0 30px 0;
+    padding: 0 20px;
+}
+.tasty-burger__img-subtitle{
+    font-family: 'Montserrat';
+    font-size: 16.7px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #3d2514;
+    text-align: center;
+    margin: 0px 0 30px 0;
+    padding: 0 20px;
+}
+.tasty-burger__img-btn{
+    font-family: 'Alfa Slab One';
+    font-size: 16.7px;
+    line-height: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #bf2222;
+    padding: 10px;
+    text-decoration: none;
+}
+.slider{
+    margin: 50px auto;
+    max-width: 1294px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 19px 25px 43px 0px rgba(0,0,0,0.17);
+}
+.slider-text{
+    position: absolute;
+    max-width: 40%;
+    width: 100%;
+    margin: 20px 0px 0 30px;
+}
+.slider__img{
+    width: 100%;
+}
+.slider__title{
+    font-family: 'Bebas Neue Bold';
+    font-size: 29.2px;
+    line-height: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #3d3d3d;
+    margin-bottom: 10px;
+}
+.slider__subtitle{
+    font-family: 'Alfa Slab One';
+    font-size: 41.7px;
+    line-height: 45px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #3d2514;
+    margin-bottom: 50px;
+}
+.slider__subtitle-2{
+    font-family: 'Montserrat Regular';
+    font-size: 20.9px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #3d3d3d;
+}
+/*FORM*/
+.form{
+    max-width: 1000px;
+    width: 100%;
+    margin: 50px auto;
+}
+.form__title{
+    font-family: 'Bebas Neue Bold';
+    font-size: 29.2px;
+    line-height: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #3d2514;
+    text-align: center;
+    margin-top: 100px;
+}
+.form__subtitle{
+    font-family: 'Alfa Slab One';
+    font-size: 50px;
+    line-height: 45px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #3d2514;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.form_width{
+    width: 379px;
+}
+.form__btn{
+    background-color: #bf2222;
+    border-radius: 5px;
+    font-family: 'Alfa Slab One';
+    font-size: 20.9px;
+    line-height: 38px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 107px;
+}
+.form-img__burger{
+    position: absolute;
+    left: 0;
+    margin-top: -70px;
+}
+.form-img__bottle{
+    width: 160px;
+    height: 220px;
+    margin-top: -13px;
+    margin-left: -50px;
+}
+.form-img__plate{
+    position: absolute;
+    right: 0;
+    width: 256px;
+    margin-top: -10px;
+}
+.form__center{
+    display: flex;
+}
+/*FOOTER*/
+.footer{
+    max-width: 1440px;
+    width: 100%;
+}
+.footer__img{
+    margin: 50px auto;
+    max-width: 1326px;
+    width: 100%;
+    height: 525px;
+    background: url('../img/footer/place_your_design_here_\(double_click_to_edit\)_5176.png') no-repeat;
+}
+.footer__logo-img{
+    max-width: 409px;
+    width: 100%;
+    height: 90px;
+    margin: 80px 0 0 40px;
+}
+.footer__title{
+    font-family: 'Montserrat Regular';
+    font-size: 16.7px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    margin: 50px 0 0 40px;
+}
+.copyright{
+font-family: 'Bebas Neue Regular';
+font-size: 16.7px;
+line-height: 1.2;
+font-weight: 400;
+color: #ffffff;
+margin: 160px 0 0 40px;
+}
+.footer__map{
+    display: flex;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 250px 0 0 220px;
+}
+.footer__email{
+    display: flex;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0 0 0 220px;
+}
+.icon__title{
+    font-family: 'Bebas Neue Regular';
+    font-size: 20.9px;
+    line-height: 37px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-left: 35px;
+}
+.social__icon{
+    display: flex;
+    color: #000000;
+    margin: 157px 0 0 450px;
+}
+.social__item{
+    margin-left: 15px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+}
+
+
+/*MEDIA*/
+@media(max-width: 1199px){
+    .phone {
+        margin-right: 100px;
+    }
+    .popular__title {
+        margin: 35px 200px;
+    }
+    .popular__title-2 {
+        margin: 10px 200px;
+    }
+    .popular__title-3 {
+        margin: 40px 200px;
+    }
+    .social__icon {
+    margin: 157px 0 0 300px;
+    }
+}
+@media(max-width: 1100px){
+    .slider__subtitle {
+        margin-bottom: 10px;
+    }
+    .slider__subtitle-2 {
+        font-size: 16px
+    }
+}
+
+@media(max-width: 990px){
+    .intro__text{
+        text-align: center;
+        margin: 40px;
+    }
+    .intro__title{
+        text-align: center;
+    }
+    .intro__subtitle{
+        text-align: center;
+    }
+    .intro__img {
+        width: 52%;
+        margin-top: -65px;
+    }
+    .intro__price {
+        margin-top: 222px;
+        margin-left: 222px;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .phone{
+        margin-right: 20px;
+    }
+    .slider__subtitle{
+        margin-bottom: 10px;
+    }
+    .slider__subtitle-2 {
+        font-size: 19px;
+        line-height: 22px;
+    }
+    .social__icon {
+        margin: 123px 0 0 300px;
+    }
+    .footer__img {
+        margin: 0;
+    }
+    .form__center{
+        display: grid;
+        place-items: center;
+    }
+    .social__icon {
+        margin: 124px 0 0 200px;
+    }
+    .footer__map {
+        margin: 250px 0 0 150px;
+    }
+    .footer__email {
+        margin: 0 0 0 150px;
+    }
+    .form-img__burger {
+        margin-top: 100px;
+    }
+    .form-img__bottle {
+        margin-top: 120px;
+        margin-left: 150px;
+        position: absolute;
+    }
+}
+@media(max-width: 880px){
+    .popular__title {
+        margin: 35px 110px;
+    }
+    .popular__title-2 {
+        margin: 10px 110px;
+    }
+    .popular__title-3 {
+        margin: 40px 110px;
+    }
+    .slider__subtitle-2 {
+        font-size: 12px;
+    }
+    .copyright {
+        margin: 100px 0 0 40px;
+    }
+}
+@media(max-width: 800px){
+    .intro__price {
+        margin-top: 130px;
+        margin-left: 130px;
+    }
+    .slider__title {
+        font-size: 22px;
+        margin-bottom: 0px;
+    }
+    .slider__subtitle {
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+    .form-img__bottle {
+        margin-top: 140px;
+        margin-left: 70px;
+    }
+    .footer__map {
+        margin: 250px 0 0 100px;
+    }
+    .footer__email {
+        margin: 0px 0 0 100px;
+    }
+}
+@media(max-width: 767px){
+    .popular__title {
+        margin: 15px 50px;
+    }
+    .popular__title-2 {
+        margin: 11px 60px;
+    }
+    .popular__title-3 {
+        margin: 40px 60px;
+    }
+}
+@media(max-width: 720px){
+    .navbar{
+        display: block;
+    } 
+    .slider__title {
+        font-size: 15px;
+        margin-bottom: -18px;
+        margin-top: -20px;
+    }
+    .slider__subtitle {
+        font-size: 20px;
+    }
+    .social__icon {
+        margin: 110px 0 0 110px;
+    }
+    .main-nav {
+        display: none;
+    }
+    .footer__logo-img {
+        max-width: 300px;
+        height: 70px;
+        margin: 35px 0 0 40px;
+    }
+    .footer__map {
+        margin: 180px 0 0 100px;
+    }
+    .footer__title {
+        font-size: 14px;
+        margin: 50px 0 0 30px;
+    }
+    .icon__title {
+        font-size: 15.9px;
+    }
+}
+@media(max-width: 600px){
+    .intro__title {
+        font-size: 100.3px;
+    }
+    .intro__subtitle {
+        margin: 30px 0px 60px;
+    }
+    .intro__title {
+        margin: 40px 0px 35px;
+    }
+    .intro__img {
+        width: 52%;
+        margin-top: -133px;
+    }
+    .intro__price {
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+    .slider{
+        display: none;
+    }
+    .footer__map {
+        margin: 180px 0 0 30px;
+    }
+    .footer__email {
+        margin: 0px 0 0 30px;
+    }
+    .footer__logo-img {
+        margin: 35px 0 0 20px;
+    }
+    .footer__title {
+        font-size: 12px;
+        margin: 50px 0 0 20px;
+    }
+    .footer__img {
+        height: auto;
+    }
+    .form-img__burger {
+        width: 30%;
+    }
+    .form-img__bottle {
+        margin-left: 5px;
+    }
+    .form-img__plate {
+        width: 25%;
+        margin-top: 95px;
+    }
+}
+@media(max-width: 576px){
+    .intro__img {
+        width: 75%;
+    }
+    .footer__logo-img {
+        margin: 22px 20%;
+    }
+    .footer__title {
+        font-size: 12px;
+        text-align: center;
+    }
+    .copyright {
+        margin: 34px 0 0 -42px;
+        text-align: center;
+    }
+    .footer__map {
+        margin: 10px 0 0 130px;
+    }
+    .footer__email {
+        margin: 0px 0 0 160px;
+    }
+    .social__icon {
+        margin: 17px 0 0 188px;
+    }
+}
+@media(max-width: 520px){
+    .logo {
+        margin: 0 auto;
+    }
+    .container-logo{
+        flex-wrap: wrap;
+    }
+    .phone{
+        margin: 0 auto;
+    }
+    .intro__title {
+        font-size: 82.3px;
+    }
+    .footer__title{
+        width: 90%;
+    }
+}
+@media(max-width: 490px){    
+    .navbar {
+        margin-top: -24px;
+    }
+    .nav__bar-top{
+        margin-top: 40px;
+    }
+    .footer__map {
+        margin: 10px 0 0 20%;
+    }
+    .footer__email {
+        margin: 2px 0 0 27%;
+    }
+    .social__icon {
+        margin: 17px 0 32px 31%;
+    }
+    .footer__logo-img {
+        margin: 10px auto;
+    }
+    .form{
+        display: none;
+    }
+}
+@media(max-width: 400px){ 
+    .intro__title {
+        font-size: 60px;
+    }
+    .tasty-burger__subtitle {
+        font-size: 33px;
+    }
+    .footer__map {
+        margin: 10px 0 0 5%;
+    }
+    .footer__email {
+        margin: 2px 0 0 5%;
+    }
+    .logo {
+        margin-left:  5px;
+    }    
+}
